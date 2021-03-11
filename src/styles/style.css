@@ -1,0 +1,165 @@
+body {
+  overflow-x: hidden;
+}
+ul {
+  list-style: none;
+}
+button {
+  outline: none;
+  border: none;
+  background: none;
+}
+a:hover,
+button:hover {
+  color: #4762ad;
+  text-decoration: none;
+}
+button:focus {
+  outline: none;
+}
+.active {
+  color: #4762ad;
+}
+header {
+  background: #fff;
+  box-shadow: 4px 0 20px -5px rgb(0 0 0 / 10%);
+}
+header a {
+  color: #1d1e25;
+  font-weight: 600;
+}
+.hero {
+  min-height: 50vh;
+  background-image: url("../img/dog.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  color: #fff;
+}
+.hero h1 {
+  font-size: 55px;
+}
+.overlay {
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.card {
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 15%) 1px 1px 1px;
+  font-size: 18px;
+  border: none;
+  min-height: 400px;
+}
+.d-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card img {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card .btn {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.loader {
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 123, 255, 0.94);
+  z-index: 1000;
+}
+.loader .la {
+  font-size: 120px;
+  color: #fff;
+  animation: roll 0.9s linear infinite;
+}
+.loading-line {
+  background-image: url(../img/load.gif);
+  background-position: center;
+  background-size: cover;
+}
+.details-name {
+  background-image: linear-gradient(
+    0deg,
+    rgba(255, 0, 255, 0),
+    rgba(255, 0, 255, 0) 16%,
+    rgb(124, 175, 229) 0px,
+    rgb(149, 179, 219) 50%,
+    rgba(255, 0, 255, 0) 0px
+  );
+}
+.dot {
+  font-size: 5rem;
+  color: #049dbf;
+}
+.arrows .la,
+.favourites {
+  background-color: #4762ad;
+  color: #fff;
+  padding: 0.4rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.arrows .la-arrow-right:hover {
+  transform: translateX(3px);
+}
+.arrows .la-arrow-left:hover {
+  transform: translateX(-3px);
+}
+.favourites {
+  background-color: #ef233c;
+  top: 0;
+  right: 20px;
+}
+.back {
+  top: 0;
+  left: 0;
+}
+.favourites.active {
+  background-color: #fff;
+  color: #ef233c;
+}
+.error {
+  height: 70vh;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.btn-primary {
+  background-color: #4762ad;
+  border: none;
+  border-radius: 0;
+}
+.btn-primary:hover {
+  background-color: #049dbf;
+  border-color: #049dbf;
+}
+@media screen and (max-width: 768px) {
+  header .la {
+    font-size: 30px;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+@keyframes roll {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
